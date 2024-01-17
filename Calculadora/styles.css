@@ -1,0 +1,112 @@
+
+/* bg-color: #585563 
+   button-color: #4a4040
+   detail-color: #C9A690
+   text-color: white
+   bg-container: black
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #585563;
+    --button-color: #4a4040;
+    --seconday-color: #C9A590;
+    --text-color: #f9f9f9;
+    --detail-color: #212529;
+    
+}
+
+
+
+.container{
+margin: auto;
+padding: 0;
+background-color: lightsteelblue;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-self: center;
+width: 95%;
+height: 100vh;
+}
+
+.calculadora{
+display: flex;
+flex-direction: column;
+width: 40%;
+height: 70%;
+background-color: var(--primary-color);
+padding: 25px;
+
+}
+
+.pantalla{
+display: flex;
+flex-flow: row nowrap;
+width: 98%;
+height: 20%;
+background-color:var(--primary-color) ;
+padding: 5px;
+}
+
+#screen{
+    background-color: var(--detail-color) ;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 75%;
+    height: 100%;
+    color: var(--text-color);
+    padding-right: 15px;
+}
+
+#delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--detail-color);
+    margin-left: 4px;
+    width: 22%;
+    height: 100%;
+    color: white;
+    border: none;
+}
+
+
+.teclado{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 80px;
+    gap: 4px;
+    padding: 5px;
+    width: 98%;
+    height: 80%;
+    background-color: var(--primary-color) ;
+}
+
+
+
+.teclado button{
+ padding: 0;
+ background-color: var(--button-color);
+ color: var(--text-color);
+ font-size: 20px;
+ border: none;
+}
+
+#cero{
+    grid-column: 1 / span 2;
+}
+
+
+.teclado button:active{
+    background-color: #5b5151;
+    font-size: 22px;
+    transition: linear;
+}

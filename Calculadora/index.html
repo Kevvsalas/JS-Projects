@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Mi calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="pantalla">
+                <div id="screen">
+                    <p id="historial">
+                    </p>
+                    <h1 id="preview">
+                     
+                    </h1>
+                </div>
+                <button id="delete" onclick="onClickSelect(12)">back</button>
+            </div>
+            <div class="teclado">
+                <button  type="button">n</button>
+                <button  type="button">n</button>
+                <button onclick="onClickSelect(11)" id="ac" type="button">ac</button>
+                <button onclick="onClickSelect(' / ')" id="division" type="button">/</button>
+                <button onclick="onClickSelect(1)" id="uno" type="button">1</button>
+                <button onclick="onClickSelect(2)" id="dos" type="button">2</button>
+                <button onclick="onClickSelect(3)" id="tres" type="button">3</button>
+                <button onclick="onClickSelect(' * ')" id="multiplicacion" type="button">x</button>
+                <button onclick="onClickSelect(4)" id="cuatro" type="button">4</button>
+                <button onclick="onClickSelect(5)" id="cinco" type="button">5</button>
+                <button onclick="onClickSelect(6)" id="seis" type="button">6</button>
+                <button onclick="onClickSelect(' - ')" id="menos" type="button">-</button>
+                <button onclick="onClickSelect(7)" id="siete" type="button">7</button>
+                <button onclick="onClickSelect(8)" id="ocho" type="button">8</button>
+                <button onclick="onClickSelect(9)" id="nueve" type="button">9</button>
+                <button onclick="onClickSelect(' + ')" id="mas" type="button">+</button>
+                <button onclick="onClickSelect(0)" id="cero" type="button">0</button>
+                <button onclick="onClickSelect('.')" id="punto" type="button">.</button>
+                <button onclick="onClickSelect(10)" id="igual" type="button">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
