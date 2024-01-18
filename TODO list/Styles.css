@@ -84,7 +84,7 @@ form{
     font-style: bold;
 }
 
-.tasks>p{
+.tasks>div{
     padding: 8px 0;
     width: 99%;
     margin: 10px 0;
