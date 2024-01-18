@@ -61,26 +61,33 @@ const calculadora = {
     //Funcion calculate
     calculate: function(){
         try {
-            console.log(this.currentInput)
-
+            
+            let history = this.currentInput
+            this.updateHistory(history)
             let result = eval(this.currentInput)
-            this.updateScreen(result)
-            this.updateHistory()
-        } catch (error) {   
-            console.log(undefined != undefined)
+            this.currentInput = result.toString()
+            this.updateScreen(this.currentInput)
+        } catch (error) { 
             this.updateScreen(undefined)
-            this.clearConsole()
+            
         }
     },
     updateScreen: function(content){
         let screen = document.getElementById('preview')
-        screen.textContent = content !== undefined ? content : 'Syntax Error'
+        if(content !== undefined){
+            screen.textContent = content
+        }else{
+            screen.textContent = 'Syntax Error'
+            this.updateHistory('')
+        }
+        
+        
+
     },
     
     updateHistory: function (content){
         let historial = document.getElementById('historial')
         historial.textContent = content !== undefined ? content : this.currentInput
-        console.log(this.currentInput)
     },
 
 
@@ -91,8 +98,10 @@ const calculadora = {
     },
 
     back: function(){
-        console.log('entrealafun')
         let newinput = this.currentInput.slice(0,-1)
+        if(this.currentInput.length <= 1){
+            this.clearConsole()
+        }
         this.currentInput = newinput
         this.updateScreen(this.currentInput)
     }
