@@ -8,6 +8,8 @@ function App() {
       <main>
         <Score></Score>
         <Board></Board>
+        <Score></Score>
+
       
       </main>
     </div>

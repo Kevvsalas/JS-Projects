@@ -1,5 +1,21 @@
 .Board{
     display: flex;
-    background-color: red;
+    background-color: #000000;
+    border: solid 10px #313131;
+    border-radius: 5%;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: xx-large;
+    width: 70%;
+    height: 90%;
 
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+ul li{
+    line-height: 2;
 }
