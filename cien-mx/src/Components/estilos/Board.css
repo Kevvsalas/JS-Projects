@@ -1,5 +1,6 @@
 .Board{
     display: flex;
+    margin-top: 170px;
     background-color: #000000;
     border: solid 10px #313131;
     border-radius: 5%;

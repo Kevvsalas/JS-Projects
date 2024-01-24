@@ -6,9 +6,10 @@ function App() {
   return (
     <div className="App">
       <main>
-        <Score></Score>
+        <Score className='score-total'></Score>
+        <Score className='score-team1'></Score>
         <Board></Board>
-        <Score></Score>
+        <Score className='score-team2'></Score>
 
       
       </main>

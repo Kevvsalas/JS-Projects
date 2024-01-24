@@ -1,4 +1,4 @@
-.ScoreBoard{
+.score{
     
     display: flex;
     background-color: #828282;
@@ -11,6 +11,21 @@
     width: 4.5em;
     height: 4.5em;
     margin: 20px;
-
-    
+   
 }
+.score-total{
+    color: red;
+}
+
+.score-team1{
+    color: red;
+}
+
+.score-team2{
+    color: red;
+}
+
+
+
+
+
