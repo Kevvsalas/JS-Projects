@@ -1,0 +1,29 @@
+
+
+{
+    "Ronda1": [
+        {"respuesta":"Minecraft","valor":"50"},
+        {"respuesta":"GTA V","valor":"40"},    
+        {"respuesta":"Rocket League","valor":"30"},   
+        {"respuesta":"Fortnite","valor":"20"},    
+        {"respuesta":"Fifa","valor":"10"}                
+    ],
+    "Ronda2":[
+        {"respuesta":"Minecraft","valor":"50"},
+        {"respuesta":"GTA V","valor":"40"},    
+        {"respuesta":"Rocket League","valor":"30"},   
+        {"respuesta":"Fortnite","valor":"20"},    
+        {"respuesta":"Fifa","valor":"10"}   
+    ],
+    "Ronda3":[
+        {"respuesta":"Minecraft","valor":"50"},
+        {"respuesta":"GTA V","valor":"40"},    
+        {"respuesta":"Rocket League","valor":"30"},   
+        {"respuesta":"Fortnite","valor":"20"},    
+        {"respuesta":"Fifa","valor":"10"}   
+    ]
+
+}
+
+
+

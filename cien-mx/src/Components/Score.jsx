@@ -3,9 +3,9 @@ import './estilos/Score.css'
 
 
 
-function Score() {
+function Score(className) {
     return(
-        <div>
+        <div className={ `score ${className}`}>
             <p>52123123</p>
         </div>
     );
